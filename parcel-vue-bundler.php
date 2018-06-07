@@ -64,9 +64,11 @@ class ParcelVueBundler {
 			return;
 		}
 
+		$debug = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG === true ) || ( isset( $_GET['script_debug'] ) ) ? '' : '.min';
+
 		wp_enqueue_script(
 			$this->slug,
-			plugin_dir_url( __FILE__ ) . 'assets/js/dist/bundle.js',
+			plugin_dir_url( __FILE__ ) . "assets/js/dist/bundle${debug}.js",
 			array(),
 			$this->version,
 			true
@@ -74,7 +76,7 @@ class ParcelVueBundler {
 
 		wp_enqueue_style(
 			$this->slug,
-			plugin_dir_url( __FILE__ ) . 'assets/js/dist/bundle.css',
+			plugin_dir_url( __FILE__ ) . "assets/js/dist/bundle${debug}.css",
 			array(),
 			$this->version
 		);
