@@ -98,7 +98,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({6:[function(require,module,exports) {
+})({5:[function(require,module,exports) {
 var global = arguments[3];
 'use strict';
 
@@ -7448,5 +7448,5 @@ new _vue2.default({
     return h(_App2.default);
   }
 });
-},{"vue":6,"./components/App.vue":3}]},{},[1], null)
+},{"vue":5,"./components/App.vue":3}]},{},[1], null)
 //# sourceMappingURL=/bundle.map
