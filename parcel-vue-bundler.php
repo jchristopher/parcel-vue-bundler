@@ -3,7 +3,7 @@
  Plugin Name: Parcel Vue Bundler
  Plugin URI: http://mondaybynoon.com/parcel-bundle-vue-wordpress-plugin/
  Description: Starter WordPress plugin utilizing Parcel to bundle your Vue application
- Version: 0.0.1
+ Version: 0.0.2
  Author: Jonathan Christopher
  Author URI: https://mondaybynoon.com/
  Text Domain: parcelvuebundler
@@ -27,7 +27,7 @@
  */
 
 class ParcelVueBundler {
-	private $version = '0.0.1';
+	private $version = '0.0.2';
 	private $slug = 'parcel-vue-bundler';
 
 	function __construct() {
